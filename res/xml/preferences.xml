@@ -1,0 +1,92 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 后台提醒 -->
+    <PreferenceCategory android:title="@string/pref_title_notifications">
+        <!--后台提醒-->
+        <CheckBoxPreference
+                android:key="auto_check_update"
+                android:defaultValue="true"
+                android:title="@string/pref_check_updates_title"
+                android:summary="@string/pref_check_updates_summary"
+                />
+
+        <!--提醒利率-->
+        <ListPreference
+                android:key="base_bid_apr"
+                android:dependency="auto_check_update"
+                android:defaultValue="@string/pref_base_notify_apr_default"
+                android:title="@string/pref_set_base_notify_apr_title"
+                android:summary="@string/pref_set_base_notify_apr_summary"
+                android:entries="@array/set_notify_apr"
+                android:entryValues="@array/set_notify_apr"
+                android:dialogTitle="@string/pref_set_base_notify_apr_dialog_title"
+                />
+        <ListPreference
+                android:key="check_update_interval"
+                android:dependency="auto_check_update"
+                android:defaultValue="@string/pref_check_updates_interval_default"
+                android:title="@string/pref_check_updates_interval_title"
+                android:summary="@string/pref_check_updates_interval_summary"
+                android:entries="@array/check_intervals"
+                android:entryValues="@array/check_intervals"
+                android:dialogTitle="@string/pref_check_updates_interval_dialog_title"
+                />
+
+
+        <RingtonePreference
+                android:dependency="auto_check_update"
+                android:key="ringtone"
+                android:title="@string/pref_check_updates_ringtone_title"
+                android:summary="@string/pref_check_updates_ringtone_summary"
+                android:ringtoneType="notification"
+                android:defaultValue="content://settings/system/notification_sound"/>
+
+        <!--震动-->
+        <CheckBoxPreference
+                android:key="vibrate"
+                android:dependency="auto_check_update"
+                android:defaultValue="true"
+                android:title="@string/pref_check_updates_vibrate_title"
+                android:summary="@string/pref_check_updates_vibrate_summary"
+                />
+    </PreferenceCategory>
+
+    <!-- 外观 -->
+    <PreferenceCategory android:title="@string/pref_title_apperance">
+        <ListPreference
+                android:key="ui_font_size"
+                android:defaultValue="15"
+                android:title="@string/pref_ui_font_size_title"
+                android:summary="@string/pref_ui_font_size_summary"
+                android:entries="@array/ui_font_size"
+                android:entryValues="@array/ui_font_size"
+                android:dialogTitle="@string/pref_ui_font_size_title"
+                />
+    </PreferenceCategory>
+    <!-- 网络 -->
+    <PreferenceCategory android:title="@string/pref_title_network">
+        <ListPreference
+                android:key="network_type"
+                android:defaultValue="@string/pref_network_type_cmnet"
+                android:title="@string/pref_network_type_title"
+                android:summary="@string/pref_network_type_summary"
+                android:entries="@array/network_type"
+                android:entryValues="@array/network_type"
+                android:dialogTitle="@string/pref_network_type_title"
+                android:enabled="false"
+                />
+    </PreferenceCategory>
+
+    <!-- 实验功能 -->
+    <PreferenceCategory android:title="@string/pref_title_labs">
+        <CheckBoxPreference
+                android:key="use_shake"
+                android:title="@string/pref_use_shake_title"
+                android:summary="@string/pref_use_shake_summary"
+                android:defaultValue="false"
+                android:enabled="false"
+                />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

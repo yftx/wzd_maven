@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="depend">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/gfansdk_statistics.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

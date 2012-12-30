@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">wzd</string>
+    <string name="getXml">获取wzd数据</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新</string>
+    <string name="about">为了方便广大温州贷用户看标开发</string>
+    <string name="qq">QQ: 329648628</string>
+    <string name="email">wzd.app@gmail.com</string>
+    <string name="developer">开发者 : yftx</string>
+
+    <!--设置界面-->
+    <string name="pref_title_notifications">后台提示</string>
+    <string name="pref_title_apperance">外观</string>
+    <string name="pref_title_misc">其他</string>
+    <string name="pref_check_updates_title">设置后台提醒</string>
+    <string name="pref_check_updates_summary">选中可以在后台提醒年利率大于指定值的标</string>
+    <string name="pref_check_updates_interval_title">检查频率</string>
+    <string name="pref_check_updates_interval_summary">两次检查的间隔分钟数,默认为10分钟</string>
+    <string name="pref_check_updates_interval_dialog_title">间隔分钟数:</string>
+    <string name="pref_check_updates_interval_default">10</string>
+    <string name="pref_check_updates_vibrate_title">振动</string>
+    <string name="pref_check_updates_vibrate_summary">有满足条件的标时手机振动</string>
+    <string name="pref_check_updates_ringtone_title">选择提示铃音</string>
+    <string name="pref_check_updates_ringtone_summary"/>
+    <string name="pref_ui_font_size_title">字体大小</string>
+    <string name="pref_ui_font_size_summary">消息列表中的字体大小, 重启页面后生效.</string>
+    <string name="pref_rt_prefix_title">转发前缀</string>
+    <string name="pref_rt_prefix_summary">转发消息时的前缀</string>
+    <string name="pref_rt_prefix_default">转</string>
+    <string name="pref_rt_cursor_position_title">转发时光标在前</string>
+    <string name="pref_rt_cursor_position_summary">选中的话转发时光标在转发消息的开头，不选中的话光标在末尾</string>
+    <string name="pref_title_network">网络</string>
+    <string name="pref_network_type_title">网络类型</string>
+    <string name="pref_network_type_cmnet">cmnet</string>
+    <string name="pref_network_type_cmwap">cmwap</string>
+    <string name="pref_network_type_3g">3G/wifi</string>
+    <string name="pref_network_type_summary">选择当前网络的接入点或类型</string>
+    <string name="pref_use_shake_title">晃动刷新</string>
+    <string name="pref_use_shake_summary">晃动手机获得最新投标信息</string>
+    <string name="pref_title_labs">实验室</string>
+    <string name="pref_base_notify_apr_default">20%</string>
+    <string name="pref_set_base_notify_apr_title">设置提醒利率</string>
+    <string name="pref_set_base_notify_apr_summary">当所发标的利率大于该值时,推送通知</string>
+    <string name="pref_set_base_notify_apr_dialog_title">提醒最低利率值</string>
+    <!--pull to refresh-->
+    <string name="menu_refresh">立即刷新!</string>
+    <string name="refresh_pull_down">下拉可以刷新...</string>
+    <string name="refresh_release">松开可以刷新...</string>
+    <string name="loading">加载中…</string>
+</resources>
